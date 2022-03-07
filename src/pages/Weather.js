@@ -34,11 +34,13 @@ async function getForeCast(){
         <br/><br/><br/>
      <button className="container font-mono py-2 px-4 shadow-md no-underline rounded-full bg-white text-orange font-semibold text-sm border-red btn-primary hover:text-orange hover:bg-red-light focus:outline-none active:shadow-none w-1/2 mx-auto" onClick={getForeCast}>Get Chennai Weather</button>
      </div>
-     <h3 className="container font-mono text-gray-700 text-m mx-auto text-center"><br/><br/>Click on the above button to fetch the weather data for chennai via API</h3><br/><br/>
+     <h3 className="container font-mono text-gray-700 text-m mx-auto text-center"><br/><br/>Click on the above button to fetch the real-time weather data for chennai via API and display it below.</h3><br/><br/>
      {/* <p className="pl-10 mx-auto text-center"><br/><br/><br/>TODO: To make a component which fetches weather data with api and returns to DOM</p> */}
     {temp!=null && 
-    <h1 className="container font-mono text-gray-700 text-3xl mx-auto text-center">The Weather in Chennai is "{temp}" Celsius.</h1>
+    <h1 className="container font-mono text-gray-700 text-3xl mx-auto text-center">The Weather in Chennai is <span className="font-bold text-orange-600">{temp}°</span> Celsius.</h1>
     }
+    <br/><br/><br/>
+    <h3 className="container font-mono text-gray-700 text-m mx-auto text-center"><br/><br/>Adding more functionalities soon...</h3><br/><br/>
     </div>
     </div>
 
